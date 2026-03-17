@@ -1,0 +1,177 @@
+site_name: SCPS Tech Hub
+site_description: Instructional Technology Guides for Shenandoah County Public Schools
+site_url: https://scps-tech-hub.github.io/
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: Fira Code
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+  - tables
+
+extra:
+  social:
+    - icon: fontawesome/solid/school
+      link: https://www.shenandoah.k12.va.us/
+
+nav:
+  - Home: index.md
+
+  - Browse by Tool:
+    - tools/index.md
+    - MasteryConnect:
+      - tools/masteryconnect/index.md
+      - Getting Started:
+        - Setting up your Mastery Tracker: tools/masteryconnect/setup-tracker.md
+        - Linking MasteryConnect to Canvas: tools/masteryconnect/link-to-canvas.md
+      - Assessments:
+        - Creating an assessment: tools/masteryconnect/create-assessment.md
+        - Using the item bank: tools/masteryconnect/item-bank.md
+        - Administering assessments to students: tools/masteryconnect/administer-assessment.md
+        - Scoring with bubble sheets: tools/masteryconnect/bubble-sheets.md
+      - Data & Reports:
+        - Reading the Mastery Tracker: tools/masteryconnect/reading-tracker.md
+        - Running reports: tools/masteryconnect/running-reports.md
+        - Using data to group students: tools/masteryconnect/grouping-students.md
+    - Canvas LMS:
+      - tools/canvas/index.md
+      - Getting Started:
+        - Navigating the dashboard: tools/canvas/navigating-dashboard.md
+        - Setting up your course homepage: tools/canvas/course-homepage.md
+        - Organizing content with modules: tools/canvas/modules.md
+      - Assignments & Assessments:
+        - Creating an assignment: tools/canvas/creating-assignments.md
+        - Building a quiz with New Quizzes: tools/canvas/new-quizzes.md
+        - Creating a graded discussion: tools/canvas/graded-discussions.md
+        - Using rubrics: tools/canvas/rubrics.md
+      - Grading & Feedback:
+        - Using SpeedGrader: tools/canvas/speedgrader.md
+        - Managing the Gradebook: tools/canvas/gradebook.md
+      - Communication:
+        - Announcements and Inbox: tools/canvas/announcements-inbox.md
+      - Tips & Best Practices: tools/canvas/tips-best-practices.md
+    - Google Classroom:
+      - tools/google-classroom/index.md
+      - Getting Started:
+        - Navigating Google Classroom: tools/google-classroom/navigating-classroom.md
+        - Setting up your class: tools/google-classroom/setting-up-class.md
+      - Creating & Managing Work:
+        - Creating assignments: tools/google-classroom/creating-assignments.md
+        - Quiz assignments with Google Forms: tools/google-classroom/quiz-assignments.md
+        - Organizing classwork with topics: tools/google-classroom/organizing-topics.md
+        - Posting materials and questions: tools/google-classroom/materials-questions.md
+      - Grading & Feedback:
+        - Grading and returning work: tools/google-classroom/grading-returning.md
+        - Using the Grades page: tools/google-classroom/grades-page.md
+      - Communication:
+        - Stream, announcements, and comments: tools/google-classroom/stream-communication.md
+      - Tips & Best Practices: tools/google-classroom/tips-best-practices.md
+    - Gemini for Workspace:
+      - tools/gemini/index.md
+      - Getting Started: tools/gemini/getting-started.md
+      - Gemini in Google Apps:
+        - Gemini in Docs: tools/gemini/gemini-docs.md
+        - Gemini in Gmail: tools/gemini/gemini-gmail.md
+        - Gemini in Slides: tools/gemini/gemini-slides.md
+        - Gemini in Sheets and Forms: tools/gemini/gemini-sheets-forms.md
+        - Gemini in Google Classroom: tools/gemini/gemini-classroom.md
+      - Tips & Responsible Use: tools/gemini/tips-responsible-use.md
+    - Lightspeed Classroom:
+      - tools/lightspeed/index.md
+      - Getting Started:
+        - Logging in and the dashboard: tools/lightspeed/logging-in.md
+        - Starting a class session: tools/lightspeed/class-sessions.md
+      - Monitoring & Engagement:
+        - Viewing student screens: tools/lightspeed/viewing-screens.md
+        - Sending messages to students: tools/lightspeed/messaging-students.md
+        - Pushing links to students: tools/lightspeed/pushing-links.md
+        - Sharing your screen: tools/lightspeed/sharing-screen.md
+      - Web Rules & Access Control:
+        - Allow and block lists: tools/lightspeed/allow-block-lists.md
+        - Student groups with custom rules: tools/lightspeed/student-groups.md
+        - Locking screens and pausing internet: tools/lightspeed/locking-screens.md
+      - Tips & Troubleshooting:
+        - Using the AccessScan extension: tools/lightspeed/accessscan.md
+        - Tips and best practices: tools/lightspeed/tips-best-practices.md
+    - Diffit:
+      - tools/diffit/index.md
+      - Getting Started: tools/diffit/getting-started.md
+      - Creating Resources:
+        - Differentiated reading passages: tools/diffit/reading-passages.md
+        - Questions, vocabulary, and activities: tools/diffit/questions-vocab-activities.md
+        - Exporting and sharing: tools/diffit/exporting-sharing.md
+      - Tips & Best Practices: tools/diffit/tips-best-practices.md
+    - PowerTeacher Pro:
+      - tools/powerteacher-pro/index.md
+      - Getting Started:
+        - Navigating PowerTeacher Pro: tools/powerteacher-pro/navigating.md
+        - Categories and calculations: tools/powerteacher-pro/categories-calculations.md
+      - Assignments & Grading:
+        - Creating assignments and entering grades: tools/powerteacher-pro/assignments-grading.md
+        - Using the scoresheet: tools/powerteacher-pro/scoresheet.md
+      - Grade Sync:
+        - Syncing from Canvas (GradeSync): tools/powerteacher-pro/gradesync-canvas.md
+        - Syncing from Google Classroom: tools/powerteacher-pro/gradesync-classroom.md
+      - End of Term: tools/powerteacher-pro/end-of-term.md
+
+  - Browse by Task:
+    - tasks/index.md
+    - Grading & Assessment: tasks/grading-assessment.md
+    - Creating Assignments: tasks/creating-assignments.md
+    - Student Engagement: tasks/student-engagement.md
+    - Classroom Management: tasks/classroom-management.md
+    - Communication: tasks/communication.md
+    - Content Creation: tasks/content-creation.md
+    - Data & Reporting: tasks/data-reporting.md
+
+  - Quick Start Guides:
+    - quickstart/index.md
+
+  - About:
+    - about/index.md
+    - Contributing: about/contributing.md
