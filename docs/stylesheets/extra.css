@@ -1,0 +1,111 @@
+/* Warmer, friendlier feel for teachers */
+
+/* Soften the header */
+.md-header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Make the site title more prominent and friendly */
+.md-header__title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+/* Friendlier admonition/callout styling */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+  border-width: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  border-radius: 12px 12px 0 0;
+  font-weight: 700;
+}
+
+/* Softer table styling */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.md-typeset table:not([class]) th {
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Bigger, friendlier search bar */
+.md-search__input {
+  border-radius: 24px;
+  font-size: 0.95rem;
+}
+
+/* Cards on homepage */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 12px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Navigation tabs - friendlier */
+.md-tabs__link {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Smoother sidebar */
+.md-nav__link {
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+/* "What's next" sections - make them stand out */
+.md-typeset h2:has(+ ul),
+.md-typeset h2:has(+ p + ul) {
+  margin-top: 2rem;
+}
+
+/* Footer */
+.md-footer {
+  margin-top: 3rem;
+}
+
+/* Friendly body text */
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.75;
+}
+
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2 {
+  font-weight: 700;
+  margin-top: 2em;
+}
+
+/* Tip boxes get a subtle warm tint */
+.md-typeset .admonition.tip {
+  border-left: 4px solid #009688;
+}
+
+/* Warning boxes */
+.md-typeset .admonition.warning {
+  border-left: 4px solid #ff6d00;
+}
+
+/* Info boxes */
+.md-typeset .admonition.info {
+  border-left: 4px solid #0288d1;
+}
